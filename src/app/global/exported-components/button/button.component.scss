@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+button {
+  background-color: var(--secondary-text-color);
+  margin-bottom: 10px;
+  &.secondary {
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
+  }
+}
