@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="animated-border">
+    <div class="tCircle bottom">
+      <div class="tCircle top" [ngStyle]="{'height':progress}">
+
+      </div>
+    </div>
+  </div>
+  <div class="inner-circle">
+    <div class="current">
+      <amount [value]="current" [currency]="'euros'" [animated]="true"></amount>
+    </div>
+    <div class="divider"></div>
+    <div class="target">
+      <amount [value]="target"></amount>
+    </div>
+  </div>
+</div>

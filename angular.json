@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "b4",
+      "prefix": "",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -127,6 +127,41 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "b4-libs": {
+      "root": "projects/b4-libs",
+      "sourceRoot": "projects/b4-libs/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/b4-libs/tsconfig.lib.json",
+            "project": "projects/b4-libs/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/b4-libs/src/test.ts",
+            "tsConfig": "projects/b4-libs/tsconfig.spec.json",
+            "karmaConfig": "projects/b4-libs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/b4-libs/tsconfig.lib.json",
+              "projects/b4-libs/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

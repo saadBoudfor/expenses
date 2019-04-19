@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "b4-libs": [
+        "dist/b4-libs"
+      ],
+      "b4-libs/*": [
+        "dist/b4-libs/*"
+      ]
+    }
   }
 }

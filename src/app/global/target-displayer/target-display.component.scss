@@ -1,0 +1,76 @@
+$size: 150px;
+
+:host {
+  display: inline-block;
+  width: $size;
+  height: $size;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+main {
+  padding: 100px;
+}
+
+div.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  div.animated-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: rotate(228deg);
+    div.tCircle {
+      width: 100%;
+    }
+    div.top {
+      height: 80%;
+      background-color: var(--primary-color-dark);
+      animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+    div.bottom {
+      height: 100%;
+      background-color: var(--primary-color-light);
+    }
+  }
+  div.inner-circle {
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    top: 7%;
+    left: 5%;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column;
+    padding: 20%;
+    text-align: center;
+
+    div.current {
+      color: var(--primary-color-light);
+      font-weight: bold;
+      font-size: 20px;
+    }
+    div.divider {
+      width: 100%;
+      border-top: 3px solid var(--primary-color-light);
+    }
+    div.target {
+      color: var(--primary-color-dark);
+      font-weight: bold;
+      font-size: 29px;
+    }
+  }
+}
+
