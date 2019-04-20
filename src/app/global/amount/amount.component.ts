@@ -5,6 +5,18 @@ import {Component, OnInit, Input} from '@angular/core';
   templateUrl: './amount.component.html',
   styleUrls: ['./amount.component.scss']
 })
+/**
+ *  Amount component (graphic component).
+ *  Display expense's amount.
+ *  @author: boudfor saad
+ *  @version: 1.1
+ *  @date: 20/04/2019
+ *  @Input:
+ *       - value: amount.
+ *       - currency: (ex: euros).
+ *       - animated: (optional): If true, add animation effect to amount.
+ *  @Output: no input.
+ */
 export class AmountComponent implements OnInit {
 
   @Input()
