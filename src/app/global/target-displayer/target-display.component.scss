@@ -1,4 +1,6 @@
+@import "../../../styles/color";
 $size: 150px;
+$keyframe: slideInFromLeft;
 
 :host {
   display: inline-block;
@@ -36,12 +38,12 @@ div.wrapper {
     }
     div.top {
       height: 80%;
-      background-color: var(--primary-color-dark);
-      animation: 1s ease-out 0s 1 slideInFromLeft;
+      background-color: $primary-color-dark;
+      animation: 1s ease-out 0s 1 $keyframe;
     }
     div.bottom {
       height: 100%;
-      background-color: var(--primary-color-light);
+      background-color: $primary-color-light;
     }
   }
   div.inner-circle {
@@ -50,7 +52,7 @@ div.wrapper {
     height: 85%;
     top: 7%;
     left: 5%;
-    background: whitesmoke;
+    background: $white-color;
     border-radius: 50%;
     display: flex;
     flex-flow: column;
@@ -58,16 +60,16 @@ div.wrapper {
     text-align: center;
 
     div.current {
-      color: var(--primary-color-light);
+      color: $primary-color-light;
       font-weight: bold;
       font-size: 20px;
     }
     div.divider {
       width: 100%;
-      border-top: 3px solid var(--primary-color-light);
+      border-top: 3px solid $primary-color-light;
     }
     div.target {
-      color: var(--primary-color-dark);
+      color: $primary-color-dark;
       font-weight: bold;
       font-size: 29px;
     }

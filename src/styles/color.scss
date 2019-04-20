@@ -1,17 +1,19 @@
 // try with color: 51 in https://www.canva.com/learn/100-color-combinations/
 
 :root {
-  --primary-color-light: #90AFC5;
-  --primary-color-dark: #336B87;
-  --secondary-color-dark: #2A3132;
-  --secondary-color-light: #763626;
+  --primary-color-light: #5EA8A7;
+  --primary-color-dark: #257985;
+  --secondary-color-dark: #808080;
+  --secondary-color-light: #FF4447;
+  --white-color: #FFFFFF;
 }
 
 // Default values (for old browsers like IE).
-$primary-color-light: #90AFC5;
-$primary-color-dark: #336B87;
-$secondary-color-dark: #2A3132;
-$secondary-color-light: #763626;
+$primary-color-light: #5EA8A7;
+$primary-color-dark: #257985;
+$secondary-color-dark: #808080;
+$secondary-color-light: #FF4447;
+$white-color: #FFFFFF;
 
 // Customs value that can be updated from app modules.
 $primary-color-light: var(--primary-color-light);
