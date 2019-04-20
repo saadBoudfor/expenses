@@ -15,6 +15,7 @@ import {Component, OnInit, Input} from '@angular/core';
  *       - value: amount.
  *       - currency: (ex: euros).
  *       - animated: (optional): If true, add animation effect to amount.
+ *       - customStyle: (optional): override default style (ex: color, size, ...)
  *  @Output: no input.
  */
 export class AmountComponent implements OnInit {
@@ -27,6 +28,9 @@ export class AmountComponent implements OnInit {
 
   @Input()
   public animated: boolean = false;
+
+  @Input()
+  public customStyle: CustomStyle;
 
   public before: string;
   public after: string;
@@ -82,4 +86,8 @@ export class AmountComponent implements OnInit {
     return formatted;
   }
 
+}
+
+interface CustomStyle {
+  color: string;
 }

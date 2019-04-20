@@ -3,19 +3,22 @@ import {TargetDisplayComponent} from "./target-displayer/target-display.componen
 import {CommonModule} from "@angular/common";
 import { AmountComponent } from './amount/amount.component';
 import { BButtonComponent } from './b-button/b-button.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
   TargetDisplayComponent,
   AmountComponent,
-  BButtonComponent],
+  BButtonComponent,
+  LayoutComponent],
   imports: [
     CommonModule
   ],
   exports: [
     TargetDisplayComponent,
     AmountComponent,
-    BButtonComponent
+    BButtonComponent,
+    LayoutComponent
   ]
 })
 export class GlobalModule {

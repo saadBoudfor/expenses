@@ -6,17 +6,21 @@
   --secondary-color-dark: #808080;
   --secondary-color-light: #FF4447;
   --white-color: #FFFFFF;
+  --grey-color: #EBEBEB;
 }
 
-// Default values (for old browsers like IE).
+// Default Theme (for old browsers like IE).
 $primary-color-light: #5EA8A7;
 $primary-color-dark: #257985;
 $secondary-color-dark: #808080;
 $secondary-color-light: #FF4447;
 $white-color: #FFFFFF;
+$grey-color: #EBEBEB;
 
 // Customs value that can be updated from app modules.
 $primary-color-light: var(--primary-color-light);
 $primary-color-dark: var(--primary-color-dark);
 $secondary-color-dark: var(--secondary-color-dark);
 $secondary-color-light: var(--secondary-color-light);
+$white-color: var(--white-color);
+$grey-color: var(--grey-color);

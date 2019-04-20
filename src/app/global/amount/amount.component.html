@@ -1,3 +1,5 @@
-<span class="before">{{before}}</span>
-<span class="after">{{',' + after}}</span>
-<span *ngIf="currency" class="currency">{{currency}}</span>
+<div class="inline-container">
+  <span class="before" [ngStyle]="{'color':customStyle?.color}">{{before}}</span>
+  <span class="after" [ngStyle]="{'color':customStyle?.color}">{{',' + after}}</span>
+  <span *ngIf="currency" class="currency" [ngStyle]="{'color':customStyle?.color}">{{currency}}</span>
+</div>

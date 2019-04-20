@@ -1,17 +1,20 @@
-span.after {
-  position: relative;
-  bottom: 12px;
-  font-weight: 500;
-  font-size: 15px;
+div.inline-container {
+  display: inline;
+  span.after {
+    position: relative;
+    bottom: 12px;
+    font-weight: 500;
+    font-size: 15px;
+  }
 
+  span.before {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  span.currency {
+    font-weight: 600;
+    font-size: 10px;
+  }
 }
 
-span.before {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-span.currency {
-  font-weight: bold;
-  font-size: 10px;
-}

@@ -33,7 +33,7 @@ div.wrapper {
     overflow: hidden;
     border-radius: 50%;
     transform: rotate(228deg);
-    div.tCircle {
+    div.circle {
       width: 100%;
     }
     div.top {
@@ -48,15 +48,13 @@ div.wrapper {
   }
   div.inner-circle {
     position: absolute;
-    width: 85%;
-    height: 85%;
-    top: 7%;
+    top: 5%;
     left: 5%;
-    background: $white-color;
+    background: $grey-color;
     border-radius: 50%;
     display: flex;
     flex-flow: column;
-    padding: 20%;
+    padding: 18%;
     text-align: center;
 
     div.current {
