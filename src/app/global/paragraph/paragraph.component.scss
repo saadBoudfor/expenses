@@ -1,0 +1,15 @@
+@import "../../../styles/color";
+
+p.text {
+  color: $secondary-color-dark;
+  text-align: justify;
+
+  &.style-first-letter {
+    &::first-letter {
+      color: $secondary-color-dark;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+}
+

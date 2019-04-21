@@ -3,10 +3,10 @@
 :host {
   display: inline-block;
   min-width: 200px;
-  margin: 4px;
 }
 
 button.primary {
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
   background-color: $primary-color-light;

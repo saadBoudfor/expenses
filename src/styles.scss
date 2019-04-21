@@ -8,3 +8,12 @@
 .show {
   display: block;
 }
+span.highlight {
+  color: $primary-color-light;
+  font-weight: bold;
+}
+
+body, html {
+  width: inherit;
+  height: inherit;
+}
