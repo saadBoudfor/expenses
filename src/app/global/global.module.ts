@@ -7,6 +7,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { ParagraphComponent } from './paragraph/paragraph.component';
 import { CardComponent } from './card/card.component';
 import { BLinkComponent } from './b-link/b-link.component';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BLinkComponent } from './b-link/b-link.component';
   LayoutComponent,
   ParagraphComponent,
   CardComponent,
-  BLinkComponent],
+  BLinkComponent,
+  ChartComponent],
   imports: [
     CommonModule
   ],
@@ -27,7 +29,8 @@ import { BLinkComponent } from './b-link/b-link.component';
     LayoutComponent,
     ParagraphComponent,
     CardComponent,
-    BLinkComponent
+    BLinkComponent,
+    ChartComponent
   ]
 })
 export class GlobalModule {

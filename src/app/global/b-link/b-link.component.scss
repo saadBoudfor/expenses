@@ -1,5 +1,7 @@
 @import "../../../styles/color";
-
+:host {
+  display: block;
+}
 a.link {
   float: right;
   margin-top: 10px;
