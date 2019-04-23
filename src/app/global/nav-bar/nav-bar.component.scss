@@ -1,0 +1,18 @@
+@import "../../../styles/color";
+
+nav {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid $grey-color;
+  background-color: $white-color;
+  div {
+    text-align: center;
+    i {
+      color: $primary-color-light;
+      &.active {
+        color: $primary-color-dark;
+        font-size: 26px;
+      }
+    }
+  }
+}

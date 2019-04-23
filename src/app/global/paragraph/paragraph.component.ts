@@ -8,7 +8,7 @@ import {Component, OnInit, Input} from '@angular/core';
 export class ParagraphComponent implements OnInit {
 
   @Input()
-  public style: boolean;
+  public style: string;
 
   constructor() { }
 

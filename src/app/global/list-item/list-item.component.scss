@@ -1,0 +1,41 @@
+@import "../../../styles/color";
+
+:host {
+  display: block;
+}
+
+div.card {
+  border-top: 1px solid $grey-color;
+  div.column {
+    padding: 2px 5px;
+  }
+  div.circle {
+    padding: 12px;
+    background: $primary-color-light;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    i.material-icons {
+      color: $white-color;
+    }
+  }
+  div.title {
+    color: $primary-color-light;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  div.sub-title {
+    color: $secondary-color-dark;
+    font-size: 14px;
+  }
+  div.additional-information {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: $secondary-color-dark;
+  }
+  i.left-icon {
+    color: $primary-color-light;
+    font-size: 40px;
+  }
+}

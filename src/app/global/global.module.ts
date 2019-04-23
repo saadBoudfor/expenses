@@ -8,6 +8,10 @@ import { ParagraphComponent } from './paragraph/paragraph.component';
 import { CardComponent } from './card/card.component';
 import { BLinkComponent } from './b-link/b-link.component';
 import { ChartComponent } from './chart/chart.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { ListItemComponent } from './list-item/list-item.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { CircularButtonComponent } from './circular-button/circular-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ChartComponent } from './chart/chart.component';
   ParagraphComponent,
   CardComponent,
   BLinkComponent,
-  ChartComponent],
+  ChartComponent,
+  CheckboxComponent,
+  ListItemComponent,
+  NavBarComponent,
+  CircularButtonComponent],
   imports: [
     CommonModule
   ],
@@ -30,7 +38,11 @@ import { ChartComponent } from './chart/chart.component';
     ParagraphComponent,
     CardComponent,
     BLinkComponent,
-    ChartComponent
+    ChartComponent,
+    CheckboxComponent,
+    ListItemComponent,
+    NavBarComponent,
+    CircularButtonComponent
   ]
 })
 export class GlobalModule {

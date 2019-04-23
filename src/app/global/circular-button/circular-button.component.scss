@@ -1,0 +1,52 @@
+@import "../../../styles/color";
+
+button {
+  margin: 0;
+  font-weight: 700;
+  background-color: $primary-color-light;
+  color: $white-color;
+  width: 100%;
+  padding: 12px;
+  border: 0;  outline: 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+}
+
+
+.btn {
+  background-color: $primary-color-light;
+  border: none;
+  i {
+    color: $white-color;
+  }
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 28px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+  border-radius: 35px;
+}
+.ripple:hover {
+  border-radius: 35px;
+  background: $primary-color-light radial-gradient(circle, transparent 1%, $primary-color-light 1%) center/15000%;
+}
+.ripple:active {
+  border-radius: 35px;
+  background-color: $primary-color-dark;
+  background-size: 100%;
+  transition: background 0s;
+}
