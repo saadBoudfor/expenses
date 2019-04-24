@@ -12,6 +12,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CircularButtonComponent } from './circular-button/circular-button.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CircularButtonComponent } from './circular-button/circular-button.compo
   CheckboxComponent,
   ListItemComponent,
   NavBarComponent,
-  CircularButtonComponent],
+  CircularButtonComponent,
+  TitleComponent],
   imports: [
     CommonModule
   ],
@@ -42,7 +44,8 @@ import { CircularButtonComponent } from './circular-button/circular-button.compo
     CheckboxComponent,
     ListItemComponent,
     NavBarComponent,
-    CircularButtonComponent
+    CircularButtonComponent,
+    TitleComponent
   ]
 })
 export class GlobalModule {

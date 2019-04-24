@@ -1,9 +1,13 @@
 @import "../../../styles/color";
 
+:host {
+  display: block;
+}
 p.text {
   color: $secondary-color-dark;
   text-align: justify;
-
+  margin-bottom: 5px;
+  margin-top: 5px;
   &.style-first-letter {
     &::first-letter {
       color: $secondary-color-dark;

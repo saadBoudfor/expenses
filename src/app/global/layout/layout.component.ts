@@ -47,7 +47,12 @@ export class LayoutComponent implements OnInit {
   }
 
   private _getClassName(columnSize: number): string {
-    return 'col-' + columnSize + '-sm';
+    let className = ''
+    if (columnSize === 0) {
+      className += 'hide '
+    }
+    className += ('col-' + columnSize + '-sm');
+    return className;
   }
 
 }

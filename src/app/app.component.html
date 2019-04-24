@@ -26,10 +26,13 @@
 <card></card>
 <card></card>
 <card></card>
+
 <div class="container">
   <b-link>Voir toutes mes dépenses</b-link>
 </div>
+
 <div class="container">
+  <b-title [icon]="'pie_chart'">Résumé des dépenses:</b-title>
   <layout [size]="12" [align]="'middle'">
     <paragraph>
       Vos dépenses ont augmenté de <span class="highlight">20%</span> par rapport au mois dernier. Votre plus grande
@@ -40,10 +43,18 @@
       Vous n'avez pas atteint votre objectif dépenses.
     </paragraph>
   </layout>
-</div>
-<div class="container">
   <chart></chart>
   <b-link>Voir toutes mes dépenses</b-link>
+</div>
+
+<div class="container">
+  <b-title [icon]="'shopping_cart'">liste des courses:</b-title>
+  <layout [size]="12" [align]="'middle'">
+    <paragraph [style]="'police-1'">
+      Vous avez plusieurs achat à faire durant la semaine en cours. La liste ci dessous contient la liste des achat avec
+      leurs dates d'expirations.
+    </paragraph>
+  </layout>
 </div>
 
 <div class="list-view">
@@ -54,7 +65,9 @@
   <list-item></list-item>
 </div>
 
-<circular-button></circular-button>
+<div class="container">
+  <b-link>Voir mes autres taches.</b-link>
+</div>
 
 <nav-bar></nav-bar>
 

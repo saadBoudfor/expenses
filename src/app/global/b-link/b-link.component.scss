@@ -1,11 +1,13 @@
 @import "../../../styles/color";
 :host {
   display: block;
+  height: 50px;
 }
 a.link {
   float: right;
   margin-top: 10px;
   cursor: pointer;
+  display: block;
   span.text {
     line-height: 1;
     color: $secondary-color-dark;

@@ -5,6 +5,7 @@ nav {
   bottom: 0;
   border-top: 1px solid $grey-color;
   background-color: $white-color;
+  height: 50px;
   div {
     text-align: center;
     i {
@@ -14,5 +15,19 @@ nav {
         font-size: 26px;
       }
     }
+  }
+
+  /* Ripple effect */
+  .ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: $white-color radial-gradient(circle, transparent 1%, $grey-color 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: $white-color;
+    background-size: 100%;
+    transition: background 0s;
   }
 }

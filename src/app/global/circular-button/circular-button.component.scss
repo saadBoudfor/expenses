@@ -1,37 +1,26 @@
 @import "../../../styles/color";
 
-button {
-  margin: 0;
-  font-weight: 700;
-  background-color: $primary-color-light;
-  color: $white-color;
-  width: 100%;
-  padding: 12px;
-  border: 0;  outline: 0;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
-  cursor: pointer;
-  position: fixed;
-  right: 20px;
-  bottom: 60px;
-}
-
-
-.btn {
+button.circular {
   background-color: $primary-color-light;
   border: none;
   i {
     color: $white-color;
+    font-size: 35px;
   }
-}
-
-.btn-circle.btn-xl {
-  width: 70px;
-  height: 70px;
-  padding: 10px 16px;
+  margin: 0;
+  font-weight: 700;
+  color: $white-color;
+  border: 0;  outline: 0;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 10px 10px;
   border-radius: 35px;
-  font-size: 28px;
   line-height: 1.33;
   text-align: center;
+  position: relative;
+  bottom: 35px;
 }
 
 /* Ripple effect */

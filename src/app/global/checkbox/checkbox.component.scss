@@ -95,15 +95,15 @@ $size: 50px;
 
 /* Hover, Focus */
 .pure-material-checkbox:hover > input {
-  opacity: 0.04;
+  opacity: 0;
 }
 
 .pure-material-checkbox > input:focus {
-  opacity: 0.12;
+  opacity: 0;
 }
 
 .pure-material-checkbox:hover > input:focus {
-  opacity: 0.16;
+  opacity: 0;
 }
 
 /* Active */
