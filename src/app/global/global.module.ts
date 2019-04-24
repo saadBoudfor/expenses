@@ -13,6 +13,7 @@ import { ListItemComponent } from './list-item/list-item.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CircularButtonComponent } from './circular-button/circular-button.component';
 import { TitleComponent } from './title/title.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TitleComponent } from './title/title.component';
   CircularButtonComponent,
   TitleComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     TargetDisplayComponent,

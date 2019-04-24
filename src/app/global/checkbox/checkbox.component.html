@@ -1,4 +1,10 @@
 <label class="pure-material-checkbox">
-  <input type="checkbox" [ngStyle]="{'width': size, 'height': size}">
-  <span><ng-content></ng-content></span>
+
+  <input [ngStyle]="{'width': size, 'height': size}"
+         type="checkbox"
+         [(ngModel)]="isChecked"
+         (change)="checkValue(isChecked)" />
+  <span>
+    <ng-content></ng-content>
+  </span>
 </label>

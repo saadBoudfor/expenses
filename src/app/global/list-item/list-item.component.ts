@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'list-item',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListItemComponent implements OnInit {
 
-  constructor() { }
+  public isChecked: boolean;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
+  onChecked(isChecked: boolean) {
+    this.isChecked = isChecked;
+  }
+
 
 }

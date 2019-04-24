@@ -20,7 +20,7 @@ div.card {
     }
   }
   div.title {
-    color: $primary-color-light;
+    color: $primary-color-dark;
     font-size: 15px;
     font-weight: bold;
   }
@@ -38,4 +38,7 @@ div.card {
     color: $primary-color-light;
     font-size: 40px;
   }
+}
+.line-through {
+  text-decoration: line-through;
 }

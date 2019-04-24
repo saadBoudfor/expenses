@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="column col-5-sm">
-    <div class="title">Pom's</div>
+    <div class="title" [ngClass]="{'line-through': isChecked}">Pom's</div>
     <div class="sub-title">1L</div>
     <div class="sub-title">23/04/2019</div>
   </div>
@@ -13,6 +13,6 @@
       reste: 4 j
   </div>
   <div class="column col-1-sm">
-   <checkbox></checkbox>
+   <checkbox (checked)="onChecked($event)"></checkbox>
   </div>
 </div>
