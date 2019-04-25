@@ -10,9 +10,10 @@ nav {
     text-align: center;
     i {
       color: $primary-color-light;
+      font-size: 28px;
       &.active {
         color: $primary-color-dark;
-        font-size: 26px;
+        font-size: 30px;
       }
     }
   }
