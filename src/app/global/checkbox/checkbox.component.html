@@ -3,7 +3,9 @@
   <input [ngStyle]="{'width': size, 'height': size}"
          type="checkbox"
          [(ngModel)]="isChecked"
-         (change)="checkValue(isChecked)" />
+         value="{{isChecked}}"
+         (change)="checkValue(isChecked)"/>
+
   <span>
     <ng-content></ng-content>
   </span>

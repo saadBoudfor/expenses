@@ -59,11 +59,7 @@
 </div>
 
 <div class="list-view">
-  <list-item></list-item>
-  <list-item></list-item>
-  <list-item></list-item>
-  <list-item></list-item>
-  <list-item></list-item>
+  <list-item *ngFor="let task of taskList" [task]="task"></list-item>
 </div>
 
 <div class="container">

@@ -8,10 +8,12 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 export class CheckboxComponent implements OnInit {
   @Input()
   public size: string;
+
+  @Input()
   public isChecked: string;
 
   @Output()
-  public checked = new  EventEmitter<boolean>();
+  public checked = new EventEmitter<boolean>();
 
   constructor() {
   }
@@ -19,7 +21,7 @@ export class CheckboxComponent implements OnInit {
   ngOnInit() {
   }
 
-  checkValue(event: any){
+  checkValue(event: any) {
     this.checked.emit(event);
   }
 }

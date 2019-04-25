@@ -1,18 +1,18 @@
 <div class="card row">
   <div class="column col-2-sm">
     <div class="circle">
-      <i class="material-icons">shopping_basket</i>
+      <i class="material-icons">{{task?.icon}}</i>
     </div>
   </div>
   <div class="column col-5-sm">
-    <div class="title" [ngClass]="{'line-through': isChecked}">Pom's</div>
-    <div class="sub-title" [ngClass]="{'line-through': isChecked}">1L</div>
-    <div class="sub-title" [ngClass]="{'line-through': isChecked}">23/04/2019</div>
+    <div class="title" [ngClass]="{'line-through': task.isChecked}">{{task?.title}}</div>
+    <div class="sub-title" [ngClass]="{'line-through': task.isChecked}">{{task?.quantity}}</div>
+    <div class="sub-title" [ngClass]="{'line-through': task.isChecked}">{{task?.date.toLocaleDateString()}}</div>
   </div>
-  <div class="column additional-information col-3-sm" [ngClass]="{'line-through': isChecked}">
-      reste: 4 j
+  <div class="column additional-information col-3-sm" [ngClass]="{'line-through': task.isChecked}">
+    {{'reste:   ' + task?.deadLine + ' j'}}
   </div>
   <div class="column col-1-sm">
-   <checkbox (checked)="onChecked($event)"></checkbox>
+   <checkbox (checked)="onChecked($event)" [isChecked]="task.isChecked"></checkbox>
   </div>
 </div>
