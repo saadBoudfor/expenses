@@ -8,6 +8,7 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 export class CheckboxComponent implements OnInit {
   @Input()
   public size: string;
+  public isChecked: string;
 
   @Output()
   public checked = new  EventEmitter<boolean>();
