@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Status} from "../../model/Status";
 import {Task} from "../../model/Task";
-import {ListItem} from "../../../global/list-item/ListItem";
+import {ListItem} from "../../../global/model/ListItem";
 
 @Injectable({
   providedIn: 'root'

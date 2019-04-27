@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {ListItem} from "../../../global/list-item/ListItem";
+import {ListItem} from "../../../global/model/ListItem";
 import {Expense} from "../../model/Expense";
 
 @Injectable({

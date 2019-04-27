@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ListItem} from "../../../global/list-item/ListItem";
+import {ListItem} from "../../../global/model/ListItem";
 import {Task} from "../../model/Task";
 import {Status} from "../../model/Status";
 import {Expense} from "../../model/Expense";
