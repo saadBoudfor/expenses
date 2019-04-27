@@ -1,18 +1,38 @@
-<div class="card row">
+<div class="card row simple-with-checkbox" *ngIf="type === 'simple-with-checkbox'">
   <div class="column col-2-sm">
     <div class="circle">
-      <i class="material-icons">{{task?.icon}}</i>
+      <i class="material-icons">{{listItem?.icon}}</i>
     </div>
   </div>
   <div class="column col-5-sm">
-    <div class="title" [ngClass]="{'line-through': task.isChecked}">{{task?.title}}</div>
-    <div class="sub-title" [ngClass]="{'line-through': task.isChecked}">{{task?.quantity}}</div>
-    <div class="sub-title" [ngClass]="{'line-through': task.isChecked}">{{task?.date.toLocaleDateString()}}</div>
+    <div class="title" [ngClass]="{'line-through': listItem.checked}">{{listItem?.title}}</div>
+    <div class="sub-title" [ngClass]="{'line-through': listItem.checked}">{{listItem?.subTitle}}</div>
+    <div class="sub-title" [ngClass]="{'line-through': listItem.checked}">{{listItem?.additionalInformation.first()}}</div>
   </div>
-  <div class="column additional-information col-3-sm" [ngClass]="{'line-through': task.isChecked}">
-    {{'reste:   ' + task?.deadLine + ' j'}}
+  <div class="column additional-information col-3-sm" [ngClass]="{'line-through': listItem.checked}">
+    {{listItem?.additionalInformation.last()}}
   </div>
   <div class="column col-1-sm">
-   <checkbox (checked)="onChecked($event)" [isChecked]="task.isChecked"></checkbox>
+   <checkbox (checked)="onChecked($event)" [isChecked]="listItem.checked"></checkbox>
+  </div>
+</div>
+
+
+<div class="card simple-with-icon" *ngIf="type === 'simple-with-icon'">
+  <div class="column">
+    <div class="circle">
+      <i class={{listItem.icon}}></i>
+    </div>
+  </div>
+  <div class="column">
+    <div class="title">{{listItem.title}}</div>
+    <div class="sub-title">{{listItem.subTitle}}</div>
+    <div class="additional-information"><i class={{listItem.additionalInformation.first()}} ></i></div>
+  </div>
+  <div class="column">
+    <amount [value]="22.59" [currency]="'euros'" [customStyle]="{color: '#808080'}"></amount>
+  </div>
+  <div class="column">
+    <i class="material-icons left-icon">add_box</i>
   </div>
 </div>

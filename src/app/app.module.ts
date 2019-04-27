@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { GlobalModule } from './global/global.module';
+import {ExpensesModule} from "./expenses/expenses.module";
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { GlobalModule } from './global/global.module';
   ],
   imports: [
     BrowserModule,
-    GlobalModule
+    ExpensesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

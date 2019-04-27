@@ -1,31 +1,25 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {TaskView} from "./TaskView";
+import {Component, Input, OnInit} from '@angular/core';
+import {ListItem} from "./ListItem";
 
 @Component({
   selector: 'list-item',
   templateUrl: './list-item.component.html',
   styleUrls: ['./list-item.component.scss']
 })
-export class ListItemComponent implements OnInit {
+export class ListItemComponent implements OnInit{
+  @Input()
+  public listItem: ListItem;
 
   @Input()
-  public task: TaskView;
+  public type: string = 'simple-with-checkbox';
 
-  constructor() {
-  }
-
-  ngOnInit() {
-    if (this.task) {
-      const diff = new Date().getTime() - this.task.date.getTime();
-      const deadLine = new Date(diff).getDay();
-      this.task.deadLine = (diff < 0) ? (deadLine * -1) : deadLine;
-      console.log(diff);
-      console.log(this.task.date);
-    }
+  ngOnInit(): void {
+    this.listItem.title = this.listItem.title.toCapitalize();
   }
 
   onChecked(isChecked: boolean) {
-    this.task.isChecked = isChecked;
+    this.listItem.checked = isChecked;
+    console.log(this.listItem);
   }
 
 

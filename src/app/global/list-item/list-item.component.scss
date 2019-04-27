@@ -4,7 +4,7 @@
   display: block;
 }
 
-div.card {
+div.card.simple-with-checkbox {
   border-top: 1px solid $grey-color;
   background-color: $white-color;
   div.column {
@@ -42,4 +42,46 @@ div.card {
 }
 .line-through {
   text-decoration: line-through;
+}
+
+div.card.simple-with-icon {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.10);
+  display: flex;
+  flex-flow: row;
+  border-top: 1px solid $grey-color;
+  background-color: $white-color;
+  div.column {
+    padding: 2px 5px;
+    margin: auto;
+  }
+  div.circle {
+    padding: 12px;
+    background: $primary-color-light;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 19px;
+    i {
+      color: $white-color;
+    }
+  }
+  div.title {
+    color: $primary-color-dark;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  div.sub-title {
+    color: $secondary-color-dark;
+    font-size: 14px;
+  }
+  div.additional-information {
+    i {
+      color: $secondary-color-dark;
+    }
+  }
+  i.left-icon {
+    color: $primary-color-light;
+    font-size: 40px;
+  }
 }

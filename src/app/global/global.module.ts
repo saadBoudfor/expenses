@@ -14,6 +14,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CircularButtonComponent } from './circular-button/circular-button.component';
 import { TitleComponent } from './title/title.component';
 import {FormsModule} from "@angular/forms";
+import './prototypes/array-prototypes'
+import './prototypes/string-prototypes'
 
 @NgModule({
   declarations: [
